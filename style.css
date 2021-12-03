@@ -18,6 +18,8 @@ header h1{
   font-weight: 900;
   color: #000;
 }
+
+
 .galeria{
   display: flex;
   flex-wrap: wrap;
@@ -41,11 +43,13 @@ header h1{
 
 
 /*efeito*/
-.galeria-items:hover{
-  transform: scale(1.05;
+
+.galeria-items:hover {
+  transform: scale 1.05 ;
 }
 
-footer{
+
+footer {
   height: 100px;
   display: flex;
   justify-content: center;
