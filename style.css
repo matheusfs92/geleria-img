@@ -24,16 +24,16 @@ header h1{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 0.2vw; /*vai dar espeço entre as fotos*/
-  padding: 0 2vw; /*vai dar um espaço na foto da parede*/
+  gap: 1vw;  /*vai dar espeço entre as fotos*/
+  padding: 0 1vw; /*vai dar um espaço na foto da parede*/
 }
 .galeria-items{
-  width: 350px;
-  height: 350px;
-  border: 2px solid #FFF;
+  width: 340px;
+  height: 340px;
+  border: 10px solid #FFF;
   box-shadow: 5px 5px 5px #0006;
   flex-grow: 1;
-  transition: transform .2s linear; /*velocidade do efeito de aumentar a foto*/
+  transition: transform .1s linear; /*velocidade do efeito de aumentar a foto*/
 }
 .galeria-items img {
   width: 100%;
@@ -43,10 +43,10 @@ header h1{
 
 
 /*efeito*/
-
-.galeria-items:hover {
-  transform: scale 1.05 ;
+.galeria-items:hover{
+  transform: scale(1.03); /*efeito que aumenta o tamanho da img*/
 }
+
 
 
 footer {
