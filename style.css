@@ -51,14 +51,6 @@ header h1{
   transform: scale(1.03); /*efeito que aumenta o tamanho da img*/
 }
 
-.container{
-  display:grid;
-  grid-template-columns: repeat(3, 2fr); /* vai determinar linha a e coluna */
-  grid-auto-rows:500px 500px;/* vai aumentar o tamanho das img de uma culuna */
-  grid-gap:0px; /* vai dar um pequeno espeço nas img*/
-  grid-auto-flow: dense;
-}
-
 /* vai deixar as img enquadrada */
 .gallery-item{
   width:100%;
