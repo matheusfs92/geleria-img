@@ -99,3 +99,154 @@ footer {
 /* ---------- */
 /* ---------- */
 /* ---------- */
+
+
+/*galeria do math - teste css*/
+
+
+
+.container{
+  display:grid;
+  grid-template-columns: repeat(3, 2fr); /* vai determinar linha a e coluna */
+  grid-auto-rows:200px 200px;/* vai aumentar o tamanho das img de uma culuna */
+  grid-gap:1px; /* vai dar um pequeno espeço nas img*/
+  grid-auto-flow: dense;
+}
+
+
+/* vai deixar as img enquadrada */
+.gallery-item{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+
+
+.gallery-item .image{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
+
+.gallery-item .image img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  object-position:50% 50%;
+  cursor:pointer;
+  transition:.5s ease-in-out;
+}
+
+/* efeito de aumentar a img um pouco quando o mouse tiver em cima */
+.gallery-item:hover .image img{
+  transform:scale(1.05); /* vai dar uma leve aumentada */
+}
+
+
+/* efeito das img */
+.gallery-item .text{
+  opacity:0; /*se nao tiver isso vai aparecer o texto*/
+  position:absolute;
+  top:50%;/* vai ficar o texto no meio*/
+  left:50%;
+  transform:translate(-50%,-50%); /*para o texto ficar enquadrado*/
+  color:#fff;
+  font-size:25px; /* tamnho do texto*/
+  pointer-events:none;/* vai tornar toda img ciclavel*/
+ /*
+  z-index:4;
+  transition: .3s ease-in-out;
+  -webkit-backdrop-filter: blur(4px) saturate(1.8);
+  backdrop-filter: blur(4px) saturate(1.8);
+  */
+  /* daria um efeito borado na tela do texto quenado aparecer*/
+  
+}
+
+.gallery-item:hover .text{
+  opacity:1;
+  animation: move-down .3s linear; /* o text vai baixar devagar*/
+   /*
+   padding:1em; 
+   width:100%;
+   */
+}
+
+
+/*
+
+.w-2{
+  grid-column: span 3;
+}
+.w-2{
+  grid-column: span 3;
+}
+.w-3{
+  grid-column: span 3;
+}
+.w-4{
+  grid-column: span 3;
+}
+.w-5{
+  grid-column: span 3;
+}
+.w-6{
+  grid-column: span 3;
+}
+
+.h-1{
+  grid-row: span 1;
+}
+.h-2{
+  grid-row: span 2;
+}
+.h-3{
+  grid-row: span 3;
+}
+.h-4{
+  grid-row: span 4;
+}
+.h-5{
+  grid-row: span 5;
+}
+.h-6{
+  grid-row: span 6;
+}
+
+*/
+
+.a-2{
+  grid-row: span 2;
+}
+
+.m-3{
+  grid-column: span 2;
+}
+
+.t-2{
+  grid-row: span 2;}
+
+@media screen and (max-width:500px){
+  .container{
+      grid-template-columns: repeat(2,1fr);
+  }
+  .w-1,.w-2,.w-3,.w-4,.w-5,.w-6{
+      grid-column:span 1;
+  }
+}
+
+
+
+@keyframes move-down{
+
+  0%{
+      top:10%;
+  }
+  50%{
+      top:35%;
+  }
+  100%{
+      top:50%;
+  }
+}
