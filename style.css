@@ -22,7 +22,7 @@ header h1{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 2vw;
+  gap: 0.2vw; /*vai dar espeço entre as fotos*/
   padding: 0 2vw; /*vai dar um espaço na foto da parede*/
 }
 .galeria-items{
@@ -31,7 +31,7 @@ header h1{
   border: 2px solid #FFF;
   box-shadow: 5px 5px 5px #0006;
   flex-grow: 1;
-  transition: transform .5s linear;
+  transition: transform .2s linear; /*velocidade do efeito de aumentar a foto*/
 }
 .galeria-items img {
   width: 100%;
@@ -39,8 +39,10 @@ header h1{
   object-fit: cover; /*tirando isso a img vai ficar do tamnho da quadrado*/
 }
 
+
+/*efeito*/
 .galeria-items:hover{
-  transform: scale(1.05);
+  transform: scale(1.05;
 }
 
 footer{
