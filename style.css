@@ -334,14 +334,14 @@ footer {
 }
 
 .ultima-3{
-  margin: 2px auto;
-  max-width: 100px;
+  margin: 5px auto;
+  max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-column-gap: 2px;
   grid-row-gap: 2px;
   justify-content: center;
-  padding: 0 1px;
+  padding: 0 10px;
 }
 
 .img-3{
