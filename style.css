@@ -321,14 +321,38 @@ footer {
 /* ---------- */
 /* ---------- */
 
+
 .ultima-2 {
-  
+  margin: 2px auto;
+  max-width: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1250px, 2fr));
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  justify-content: center;
+  padding: 0 1px;
+}
+
+.ultima-3{
+  margin: 2px auto;
+  max-width: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  justify-content: center;
+  padding: 0 1px;
 }
 
 .img-3{
+  background: white;
+  padding: 1px 1px 1px;
  
 }
 
-.foto-c3 img{
+.foto-c3 {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
   
 }
