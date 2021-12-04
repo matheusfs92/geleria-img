@@ -447,3 +447,79 @@ footer {
 /* ---------- */
 /* ---------- */
 /* ---------- */
+
+.container-t-css-3{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr); /* vai determinar linha a e coluna */
+  grid-auto-rows:480px 280px;/* vai aumentar o tamanho das img de uma culuna */
+  grid-gap:1px; /* vai dar um pequeno espeço nas img - no meio*/
+  grid-auto-flow: dense;
+}
+
+
+/* vai deixar as img enquadrada */
+.galeria-css-3{
+  width:100%;
+  height:100%;
+  position:relative;
+  
+}
+
+.galeria-css-3 .image2{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
+
+.galeria-css-3 .image2 img{
+  width:100%;
+  height:100%;
+  object-fit: cover; /*  --- object-fit: cover ---- vai completar a caixa se tirar */
+  object-position:50% 50%;
+  cursor:pointer;
+  transition:.5s ease-in-out;
+}
+
+/* efeito de aumentar a img um pouco quando o mouse tiver em cima */
+.galeria-css-3 .image2 img{
+  transform:scale(1.05); /* vai dar uma leve aumentada */
+}
+
+
+/* efeito das img */
+.galeria-css-3 .text2{
+  opacity:0; /*se nao tiver isso vai aparecer o texto*/
+  position:absolute;
+  top:50%;/* vai ficar o texto no meio*/
+  left:50%;
+  transform:translate(-50%,-50%); /*para o texto ficar enquadrado*/
+  color:#fff;
+  font-size:25px; /* tamnho do texto*/
+  pointer-events:none;/* vai tornar toda img ciclavel*/
+ /*
+  z-index:4;
+  transition: .3s ease-in-out;
+  -webkit-backdrop-filter: blur(4px) saturate(1.8);
+  backdrop-filter: blur(4px) saturate(1.8);
+  */
+  /* daria um efeito borado na tela do texto quenado aparecer*/
+  
+}
+
+.galeria-css-3:hover .text2{
+  opacity:1;
+  animation: move-down .3s linear; /* o text vai baixar devagar*/
+   /*
+   padding:1em; 
+   width:100%;
+   */
+}
+.mts{
+  grid-row: span 1;
+}
+
+.mt3{
+  grid-column: span 1;
+}
+
